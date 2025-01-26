@@ -1,0 +1,294 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Thejas</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <li class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link activi-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">My Self</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Content</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </u>
+            </div>
+            <div class="nav-button">
+               <a class="btn" href="https://drive.google.com/file/d/1yeZt80zK39ky1zqLLi9ZHq2h3WSPDvA0/view?usp=drivesdk" target="_blank" download>Download CV <i class="uil uil-file-alt"></i></a>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <!-- -------------- MAIN ---------------- --> 
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- --><center><img src="data:image/jpeg;base64,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" height="100" width ="400"
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Thejas Sreenivasu </span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Experienced frontend developer with a passion for creating visually stunning
+                            and user-friendly websites and even Ai engineer.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn yellow-btn">
+  <a href="https://sites.google.com/view/thejas-s-resume-website/my-resume" target="_top" rel="noopener noreferrer">My Another Resume Website<p>In Deatil</p></a>
+</button>
+
+                       <a class="btn" href="https://drive.google.com/file/d/1yeZt80zK39ky1zqLLi9ZHq2h3WSPDvA0/view?usp=drivesdk" target="_blank" download>Download CV <i class="uil uil-file-alt"></i></a>
+                    </div>
+                    <div class="social_icons">
+                      <a href="https://www.instagram.com/_vinay_so_sreenivas_" target="_top" rel="noopener noreferrer">
+    <div class="icon">
+        <i class="uil uil-instagram"></i>
+    </div>
+</a>
+                        <div class="icon">
+  <a href="https://in.linkedin.com/in/thejas-sreenivasu-2677ba1b8" target="_top" rel="noopener noreferrer">
+    <i class="uil uil-linkedin-alt"></i>
+  </a>
+</div>
+                       <div class="icon">
+  <a href="https://twitter.com/_so_sreenivasu_" target="_top">
+    <i class="uil uil-twitter"></i>
+  </a>
+</div>
+<div class="icon">
+  <a href="https://www.youtube.com/channel/UCHGuSdMpRf4FihOL8byi4XA_" target="_top">
+    <i class="uil uil-youtube"></i>
+  </a>
+</div>
+                      
+
+                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    </div>
+                </div>
+               
+                
+  
+
+<body>
+
+
+                    
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Up</p>
+                    </a>
+                </div>
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>My introduction</h3>
+                            <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
+                                frameworks and libraries,which allows me to implement interactive features.
+                                Additionally, I have experirence working with content management systems (CMS) like
+                                WordPress.
+                            </p>
+                            <div class="about-btn">
+                                <button class="btn"><a href="https://drive.google.com/file/d/1yeZt80zK39ky1zqLLi9ZHq2h3WSPDvA0/view?usp=drivesdk" target="_top" rel="noopener noreferrer">Download CV</a><i class="uil uil-import"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                                <span>Vue</span>
+                                <span>React</span>
+                                <span>Angular</span>
+   <span>UI&UX</span>                           
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Backend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>PHP</span>
+                                <span>JAVA</span>
+                                <span>Python</span>
+                                <span>C++</span>
+                              <span>AWS</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Database</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                                <span>PostgreSQL</span>
+                                <span>MongoDB</span>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          
+            <!-- -------------- PROJECT BOX ---------------- -->
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Content</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Marks Card</h3>
+                        <label> <a href="https://sites.google.com/view/thejas-s-resume-website/my-marks-card" target="_top">My Eduction Documents</a></label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-users-alt"></i>
+                        <h3>Project</h3>
+                        <label> <a href="https://sites.google.com/view/thejas-s-resume-website/my-project" target="_top">10+ Successfully Runing project</a></label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-award"></i>
+<h3>My Technical Skill Certificates</h3>
+<label><a href="https://sites.google.com/view/thejas-s-resume-website/my-certificate-course" target="_top">Click here to look 180+ skilled with <center>genuine Certificates <center></a></label>
+
+                    </div>
+                </div>
+            </section>
+            <!-- -------------- CONTACT BOX ---------------- -->
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in touch</h1>
+                    <span>I hope you have gone through my intrusting portfolio. Do you have any doubt in your mind or if you want hire me,<p>reach me here</p></span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: thejasssreenivasu@gmail.com <p>or</p> <p>thejassreenivasu@gmail.com</p></p>
+                            <p><i class="uil uil-phone"></i> +91 9179533131</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Name">
+                                <input type="text" class="input-field" placeholder="Email">
+                              <input type="text" class="input-field" placeholder="Company">
+                          </div>
+                            <div class="text-area">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Send <i class="uil uil-message"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <title>CodePen - CSS God Rays</title> <style> html { font-size: 15px; } html, body { margin: 0; padding: 0; min-height: 100%; } body { height:100%; display: flex; flex-direction: column; } .referer-warning { background: black; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); padding: 0.75em; color: white; text-align: center; font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, system-ui, Sans-Serif; line-height: 1.2; font-size: 1rem; position: relative; z-index: 2; } .referer-warning span { font-family: initial; } .referer-warning h1 { font-size: 1.2rem; margin: 0; } .referer-warning a { color: #56bcf9; } </style> </head> <body class=""> <div id="result-iframe-wrap" role="main"> <iframe id="result" srcdoc="<!DOCTYPE html> <html lang=&quot;en&quot; > <head> <meta charset=&quot;UTF-8&quot;> <link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; /> <meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;> <link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; /> <link rel=&quot;mask-icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg&quot; color=&quot;#111&quot; /> <script src=&quot;https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js&quot;></script> <title>CodePen - CSS God Rays</title> <link rel=&quot;canonical&quot; href=&quot;https://codepen.io/THEJAS-SREENIVASU/pen/vYbXzRR&quot;> <script src=&quot;https://cdn.tailwindcss.com&quot;></script> <script> tailwind.config = { darkMode: &quot;class&quot;, } </script> <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap'); body { font-family: Inter, sans-serif; } @-webkit-keyframes jumbo { from { background-position: 50% 50%, 50% 50%; } to { background-position: 350% 50%, 350% 50%; } } @keyframes jumbo { from { background-position: 50% 50%, 50% 50%; } to { background-position: 350% 50%, 350% 50%; } } .jumbo { --stripes: repeating-linear-gradient( 100deg, #fff 0%, #fff 7%, transparent 10%, transparent 12%, #fff 16% ); --stripesDark: repeating-linear-gradient( 100deg, #000 0%, #000 7%, transparent 10%, transparent 12%, #000 16% ); --rainbow: repeating-linear-gradient( 100deg, #60a5fa 10%, #e879f9 15%, #60a5fa 20%, #5eead4 25%, #60a5fa 30% ); background-image: var(--stripes), var(--rainbow); background-size: 300%, 200%; background-position: 50% 50%, 50% 50%; filter: blur(10px) invert(100%); -webkit-mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%); mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%); pointer-events: none; } .jumbo::after { content: &quot;&quot;; position: absolute; inset: 0; background-image: var(--stripes), var(--rainbow); background-size: 200%, 100%; -webkit-animation: jumbo 60s linear infinite; animation: jumbo 60s linear infinite; background-attachment: fixed; mix-blend-mode: difference; } .dark .jumbo { background-image: var(--stripesDark), var(--rainbow); filter: blur(10px) opacity(50%) saturate(200%); } .dark .jumbo::after { background-image: var(--stripesDark), var(--rainbow); } </style> <script> window.console = window.console || function(t) {}; </script> </head> <body translate=&quot;no&quot;> <main> <div class=&quot;relative flex flex-col h-[100vh] items-center justify-center bg-white dark:bg-black transition-bg&quot;> <div class=&quot;absolute inset-0 overflow-hidden&quot;> <div class=&quot;jumbo absolute -inset-[10px] opacity-50&quot;></div> </div> <h1 class=&quot;relative flex items-center text-5xl font-bold text-gray-800 dark:text-white dark:opacity-80 transition-colors&quot;> THEJAS S <span class=&quot;ml-1 rounded-xl bg-current p-2 text-[0.7em] leading-none&quot;> <span class=&quot;text-white dark:text-black&quot;>TS</span> </span> </h1> <div class=&quot;mt-4&quot;> <button onclick=&quot;toggleTheme()&quot; class=&quot;px-3 py-1 border border-stone-200 rounded-full drop-shadow-sm text-sm text-stone-800 dark:text-white bg-white/40 dark:bg-black/40 backdrop-blur-lg hover:border-stone-300 transition-colors dark:border-stone-500 dark:hover:border-stone-400&quot;>Toggle Theme</button> </div> </div> </main> <script id=&quot;rendered-js&quot; > function toggleTheme() { if (document.body.classList.contains(&quot;dark&quot;)) document.body.classList.remove(&quot;dark&quot;);else document.body.classList.add(&quot;dark&quot;); } //# sourceURL=pen.js </script> </body> </html> " sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" allow="accelerometer; ambient-light-sensor; camera; display-capture; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr; web-share" allowTransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe" width="100%"> </iframe> </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">My Self</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Content</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                 <a href="https://www.instagram.com/_vinay_so_sreenivas_" target="_top" rel="noopener noreferrer">
+    <div class="icon">
+        <i class="uil uil-instagram"></i>
+    </div>
+</a>
+                        <div class="icon">
+  <a href="https://in.linkedin.com/in/thejas-sreenivasu-2677ba1b8" target="_top">
+    <i class="uil uil-linkedin-alt"></i>
+  </a>
+</div>
+                       <div class="icon">
+  <a href="https://twitter.com/_so_sreenivasu_" target="_top">
+    <i class="uil uil-twitter"></i>
+  </a>
+</div>
+<div class="icon">
+  <a href="https://www.youtube.com/channel/UCHGuSdMpRf4FihOL8byi4XA_" target="_top">
+    <i class="uil uil-youtube"></i>
+  </a>
+</div>
+                      
+
+                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    </div>
+      
+            <div class="bottom-footer">
+                <p>Copyright © <a href="#home" style="text-decoration: none;">Thejas Sreenivasu</a> - All rights reserved
+                </p>
+            </div>
+      
+        </footer>
+    </div>
+  
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="script.js"></script>
+</body>
+
+</html>
